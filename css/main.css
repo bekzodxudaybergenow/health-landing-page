@@ -390,6 +390,19 @@ body {
   color: var(--cyan-green);
 }
 
+.show {
+  display: block !important;
+}
+
+.sidebar {
+  transform: translateX(0) !important;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
 .header {
   position: relative;
   z-index: 1;
