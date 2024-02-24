@@ -338,7 +338,7 @@ template {
 }
 :root {
   --body-font: "Inter", sans-serif;
-  --main-color: #1C2A3A;
+  --main-color: rgb(28, 42, 58);
   --lotion-white: #FDFDFD;
   --cyan-green: #88B7A4;
   --accent-color: linear-gradient(to right, #316362, #88B7A4);
@@ -392,6 +392,10 @@ body {
 
 .show {
   display: block !important;
+}
+
+.box__shadow {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
 }
 
 .sidebar {
