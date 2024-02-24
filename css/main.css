@@ -407,11 +407,28 @@ body {
   height: auto;
 }
 
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--lotion-white);
+}
+
+.desc {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--lotion-white);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
 .header {
   position: relative;
   z-index: 1;
   padding-top: 18px;
-  background-color: chartreuse;
 }
 .header::before {
   content: "";
