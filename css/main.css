@@ -558,6 +558,7 @@ h1, h2, h3 {
 }
 
 .header__main--content {
+  max-width: 620px;
   margin-bottom: 60px;
 }
 
@@ -609,5 +610,11 @@ h1, h2, h3 {
     font-size: 18px;
     max-width: 200px;
     height: 50px;
+  }
+}
+@media screen and (min-width: 435px) {
+  .header__content--title {
+    font-size: 52px;
+    line-height: 58px;
   }
 }/*# sourceMappingURL=main.css.map */
