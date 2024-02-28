@@ -459,9 +459,9 @@ h1, h2, h3 {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -15px;
   width: 100vw;
-  padding: 10px 15px;
+  padding: 10px 15px 0 25px;
   z-index: 1;
   background: var(--accent-color);
   transition: box-shadow 0.3s ease;
@@ -514,7 +514,7 @@ h1, h2, h3 {
   margin-top: 20px;
 }
 
-.header__nav--link {
+.header__nav {
   display: none;
 }
 
@@ -622,6 +622,33 @@ h1, h2, h3 {
   }
 }
 @media screen and (min-width: 768px) {
+  .header__menu {
+    background: transparent;
+  }
+  .header__nav {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .header__nav--link {
+    font-size: 18px;
+  }
+  .header__sidebar--btn,
+  .header__sidebar,
+  .header__shade {
+    display: none !important;
+  }
+  .header__btn {
+    display: flex;
+    max-width: 185px;
+    font-size: 18px;
+    color: var(--lotion-white);
+    background: var(--accent-color2);
+    transition: 1s ease !important;
+  }
+  .header__btn:hover {
+    background: var(--accent-color);
+  }
   .header__main {
     position: relative;
     padding-top: 200px;
