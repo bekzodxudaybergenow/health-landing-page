@@ -454,17 +454,19 @@ h1, h2, h3 {
 }
 
 .header__menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: -15px;
-  width: 100vw;
-  padding: 10px 15px 0 25px;
+  right: -15px;
   z-index: 1;
-  background: var(--accent-color);
-  transition: box-shadow 0.3s ease;
+  transition: all 1s ease;
+}
+
+.header__menu--row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .header__menu--logo {
@@ -649,7 +651,7 @@ h1, h2, h3 {
   .header__btn:hover {
     background: var(--accent-color);
   }
-  .header__main {
+  .header__main--row {
     position: relative;
     padding-top: 200px;
   }
@@ -683,5 +685,10 @@ h1, h2, h3 {
   .header__main--image img {
     max-width: 300px;
     height: 600px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .header__menu--row {
+    padding: 10px 0;
   }
 }/*# sourceMappingURL=main.css.map */
