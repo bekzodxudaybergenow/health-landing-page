@@ -342,6 +342,7 @@ template {
   --lotion-white: #FDFDFD;
   --cyan-green: #88B7A4;
   --accent-color: linear-gradient(to right, #316362, #88B7A4);
+  --accent-color2: linear-gradient(to left, #316362, #88B7A4);
   --main-line: 24px;
 }
 
@@ -371,6 +372,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   max-width: 205px;
+  width: 100%;
   height: 52px;
   border-radius: 4px;
   color: var(--main-color);
@@ -396,6 +398,7 @@ body {
 
 .box__shadow {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+  background-image: var(--accent-color);
 }
 
 .sidebar {
@@ -624,9 +627,6 @@ h1, h2, h3 {
   }
 }
 @media screen and (min-width: 768px) {
-  .header__menu {
-    background: transparent;
-  }
   .header__nav {
     display: flex;
     -moz-column-gap: 30px;
