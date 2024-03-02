@@ -441,8 +441,8 @@ h1, h2, h3 {
   width: 100%;
   height: 858px;
   background-color: var(--main-color);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 }
 .header::after {
   content: "";
@@ -462,7 +462,7 @@ h1, h2, h3 {
   left: -15px;
   right: -15px;
   z-index: 1;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .header__menu--row {
@@ -472,19 +472,19 @@ h1, h2, h3 {
   padding: 10px;
 }
 
-.header__menu--logo {
-  transition: opacity 0.3s ease;
-}
-.header__menu--logo img {
+.header__menu--logo svg {
   display: block;
   width: 67px;
   height: 60px;
 }
-.header__menu--logo:hover {
-  opacity: 0.7;
+.header__menu--logo svg path {
+  transition: fill 0.3s ease;
 }
-.header__menu--logo:active {
-  opacity: 1;
+.header__menu--logo:hover svg path {
+  fill: var(--cyan-green);
+}
+.header__menu--logo:active svg path {
+  fill: var(--lotion-white);
 }
 
 .header__sidebar {
@@ -556,6 +556,22 @@ h1, h2, h3 {
   height: 4px;
   border-radius: 3px;
   background-color: var(--lotion-white);
+  transition: all 0.3s ease;
+}
+
+.header__sidebar--btn.close-btn span {
+  position: relative;
+}
+.header__sidebar--btn.close-btn span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 5px;
+}
+.header__sidebar--btn.close-btn span:nth-child(2) {
+  display: none;
+}
+.header__sidebar--btn.close-btn span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 5px;
 }
 
 .header__main {
@@ -586,6 +602,9 @@ h1, h2, h3 {
   font-size: 16px;
   max-width: 185px;
   height: 44px;
+}
+.header__content--btn:hover {
+  background: var(--accent-color2);
 }
 
 .header__content--arrow-img {
@@ -646,18 +665,17 @@ h1, h2, h3 {
     font-size: 18px;
     color: var(--lotion-white);
     background: var(--accent-color2);
-    transition: 1s ease !important;
   }
   .header__btn:hover {
     background: var(--accent-color);
   }
   .header__main--row {
     position: relative;
-    padding-top: 200px;
+    padding-top: 100px;
   }
   .header__main--image {
     position: absolute;
-    top: 100px;
+    top: 25px;
     right: 10px;
   }
   .header__main--image img {
