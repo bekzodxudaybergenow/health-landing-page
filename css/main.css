@@ -757,4 +757,122 @@ h1, h2, h3 {
   .header__menu--row {
     padding: 10px 0;
   }
+}
+.features {
+  padding: 110px 0 60px;
+}
+
+.features--title {
+  font-size: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 54px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  list-style: none;
+}
+
+.features__list--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 320px;
+  padding: 56px 32px;
+  background-color: var(--white-color);
+  box-shadow: 0 3px 15px 2px rgba(28, 42, 58, 0.2);
+}
+
+.features__item--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50px;
+  background-color: var(--cyan-green2);
+  margin-bottom: 12px;
+}
+.features__item--image img {
+  width: 30px;
+  height: 30px;
+}
+
+.features__item--subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--main-color);
+  margin-bottom: 24px;
+}
+
+.features__item--desc {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 620px) {
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .features__list--item {
+    max-width: 260px;
+  }
+  .features--title {
+    font-size: 38px;
+    margin-bottom: 68px;
+  }
+  .features__item--desc {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 674px) {
+  .features__list--item {
+    max-width: 284px;
+    min-height: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 280px 0 60px;
+  }
+  .features__list--item {
+    max-width: 320px;
+  }
+  .features__item--desc {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__list {
+    justify-content: center;
+    gap: 46px;
+  }
+  .features__list--item {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features--title {
+    font-size: 48px;
+    margin-bottom: 74px;
+  }
+  .features__list {
+    justify-content: space-between;
+  }
+  .features__list--item {
+    max-width: 320px;
+    min-height: 358px;
+  }
+  .features__item--image {
+    margin-bottom: 26px;
+  }
+  .features__item--desc {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */
