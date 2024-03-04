@@ -60,12 +60,61 @@ body {
     line-height: 24px;
     color: var(--lotion-white);
 }
+.title2 {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-color);
+    position: relative;
+
+
+    &::before {
+        content: '';
+        width: 34px;
+        height: 4px;
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-50%);
+        background-color: var(--cyan-green);
+    }
+    &::after {
+        content: '';
+        width: 34px;
+        height: 4px;
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(50%);
+        background-color: var(--cyan-green);
+    }
+}
 .desc {
     font-size: 32px;
     font-weight: 400;
     line-height: 24px;
     color: var(--lotion-white);
 }
+.desc2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: var(--main-line);
+    color: var(--main-color2);
+}
 h1 ,h2 ,h3 {
     margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .title2 {
+
+        &::before {
+            width: 64px;
+            left: -80px;
+        }
+        &::after {
+            width: 64px;
+            right: -80px;
+        }
+    }
 }
