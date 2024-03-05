@@ -422,7 +422,7 @@ body {
 
 .title2 {
   display: inline-block;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--main-color);
   position: relative;
