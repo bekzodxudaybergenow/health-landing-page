@@ -12,8 +12,8 @@
 }
 .map__image {
     & img {
-        display: block;
-        max-width: 300px;
+        height: 500px;
+        object-fit: contain;
     }
 }
 .map__content {
@@ -81,7 +81,6 @@
     }
     .map__image img {
         height: 460px;
-        object-fit: contain;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -97,7 +96,7 @@
         }
     }
     .map__image img {
-        height: 520px;
+        height: 540px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -117,6 +116,10 @@
             right: -74px;
             width: 64px;
         }
+    }
+    .map__content--desc {
+        font-size: 22px;
+        line-height: 26px;
     }
     .map__image img {
         height: 600px;
