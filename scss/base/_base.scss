@@ -104,6 +104,23 @@ body {
 h1 ,h2 ,h3 {
     margin: 0;
 }
+.morebtn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    color: #5E8E84;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
 
 @media screen and (min-width: 1200px) {
     .title2 {
