@@ -1194,10 +1194,24 @@ h1, h2, h3 {
   }
 }
 @media screen and (min-width: 1200px) {
+  .about__row {
+    justify-content: space-between;
+  }
   .about__content {
-    max-width: 680px;
+    max-width: 600px;
   }
   .about__content--title {
     font-size: 48px;
+    transform: translateX(80px);
+  }
+  .about__content--desc {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .about__content--btn {
+    font-size: 20px;
+  }
+  .about__image img {
+    height: 600px;
   }
 }/*# sourceMappingURL=main.css.map */
