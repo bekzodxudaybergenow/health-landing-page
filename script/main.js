@@ -2,6 +2,8 @@ let openMenu = document.querySelector('.header__sidebar--btn');
 let headerShade = document.querySelector('.header__shade');
 let headerSidebar = document.querySelector('.header__sidebar');
 let headerMenu = document.querySelector('.header__menu');
+let moreBtn = document.querySelector('.about__content--btn');
+let descMore = document.querySelector('.about__content--desc-more');
 
 
 openMenu.addEventListener('click', () => {
@@ -23,3 +25,7 @@ window.onscroll = () => {
         headerMenu.classList.remove('box__shadow')
     }
 }
+
+moreBtn.addEventListener('click', () => {
+    descMore.classList.toggle('hidden');
+})
