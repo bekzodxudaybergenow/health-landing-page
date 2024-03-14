@@ -1149,6 +1149,8 @@ h1, h2, h3 {
 }
 
 .about__content--desc {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   margin-bottom: 16px;
 }
@@ -1157,6 +1159,10 @@ h1, h2, h3 {
   height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.about__content--desc-more {
+  display: none;
 }
 
 @media screen and (min-width: 620px) {

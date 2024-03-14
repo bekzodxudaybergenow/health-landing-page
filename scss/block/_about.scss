@@ -14,12 +14,17 @@
     margin-bottom: 16px;
 }
 .about__content--desc {
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
     margin-bottom: 16px;
 }
 .about__image img {
     height: 500px;
     object-fit: contain;
+}
+.about__content--desc-more {
+    display: none;
 }
 @media screen and (min-width: 620px) {
     .about__content--title {
