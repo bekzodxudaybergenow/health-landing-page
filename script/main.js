@@ -27,5 +27,11 @@ window.onscroll = () => {
 }
 
 moreBtn.addEventListener('click', () => {
-    descMore.classList.toggle('hidden');
+    descMore.classList.toggle('show');
+    if(moreBtn.textContent == 'Read More') {
+        moreBtn.textContent = 'Read Less';
+    }
+    else {
+        moreBtn.textContent = 'Read More';
+    }
 })
