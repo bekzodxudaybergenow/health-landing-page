@@ -1,0 +1,35 @@
+.info {
+    min-height: 366px;
+    padding: 60px 0;
+    background-image: url('/image/info/info-bg-2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
+    // position: relative;
+
+}
+.info__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.info__list--item {
+    & + * {
+        margin-top: 60px;
+    }
+}
+.info__item--quantity {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+.info__item--subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    color: #323F4D;
+}
