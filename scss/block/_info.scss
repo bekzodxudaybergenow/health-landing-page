@@ -31,6 +31,9 @@
     & + * {
         margin-top: 60px;
     }
+    &:nth-child(3) span::after {
+        content: 'k';
+    }
 }
 .info__item--quantity {
     display: inline-block;
@@ -38,6 +41,10 @@
     font-weight: 700;
     color: var(--main-color);
     margin-bottom: 8px;
+
+    &::after {
+        content: '+';
+    }
 }
 .info__item--subtitle {
     font-size: 28px;
