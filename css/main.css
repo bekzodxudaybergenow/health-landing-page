@@ -495,8 +495,8 @@ h1, h2, h3 {
 }
 .header {
   position: relative;
-  z-index: 1000;
   padding-top: 18px;
+  z-index: 1000;
 }
 .header::before {
   content: "";
