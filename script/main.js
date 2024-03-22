@@ -35,3 +35,22 @@ moreBtn.addEventListener('click', () => {
         moreBtn.textContent = 'Read More';
     }
 })
+
+
+
+
+let infoItemQuantity = document.querySelectorAll('.info__item--quantity');
+
+let startCount = (el) => {
+    let goal = el.dataset.goal;
+    let count = setInterval(() => {
+        +el.textContent++;
+        if (+el.textContent == goal) {
+            clearInterval(count);
+        }
+    }, 7);
+}
+
+infoItemQuantity.forEach((item) => {
+    startCount(item);
+})
