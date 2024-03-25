@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>HealthPal Landing Page</title>
 </head>
 <body>
@@ -151,14 +152,22 @@
                 <div class="appointment__row">
                     <h1 class="appointment--title">Easily Book Your Appointment</h1>
                     <picture class="appointment__pictures">
-                        <img src="./image/appointment/1.png" srcset="./image/appointment/1-2x.png 2x" width="300" height="600" alt="About who the Doctor is image">
-                        <img src="./image/appointment/2.png" srcset="./image/appointment/2-2x.png 2x" width="300" height="600" alt="An image about making time for a doctor">
-                        <img src="./image/appointment/3.png" srcset="./image/appointment/3-2x.png 2x" width="300" height="600" alt="Notification that you have made an appointment with the doctor">
-                    </picture>
-                </div>
+                        <div class="swiper appointment__swiper">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div> -->
+                                    <img class="swiper-slide appointment__pictures--image" src="./image/appointment/1.png" srcset="./image/appointment/1-2x.png 2x" width="300" height="600" alt="About who the Doctor is image">
+                                    <img class="swiper-slide appointment__pictures--image" src="./image/appointment/2.png" srcset="./image/appointment/2-2x.png 2x" width="300" height="600" alt="An image about making time for a doctor">
+                                    <img class="swiper-slide appointment__pictures--image" src="./image/appointment/3.png" srcset="./image/appointment/3-2x.png 2x" width="300" height="600" alt="Notification that you have made an appointment with the doctor">
+                                </div>
+                            </div>
+                        </picture>
+                    </div>
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/main.js"></script>
 </body>
 </html>
