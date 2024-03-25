@@ -54,3 +54,7 @@ let startCount = (el) => {
 infoItemQuantity.forEach((item) => {
     startCount(item);
 })
+
+var swiper = new Swiper(".appointment__swiper", {
+    slidesPerView: 1,
+});
