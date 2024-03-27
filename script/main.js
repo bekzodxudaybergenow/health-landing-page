@@ -58,4 +58,9 @@ infoItemQuantity.forEach((item) => {
 var swiper = new Swiper(".appointment__swiper", {
     slidesPerView: 1,
     spaceBetween: 40,
+    breakpoints: {
+        375: {
+            spaceBetween: 0,
+        },
+    }
 });
