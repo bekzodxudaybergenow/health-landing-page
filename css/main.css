@@ -1316,7 +1316,7 @@ h1, h2, h3 {
 .appointment::after {
   content: "";
   width: 100%;
-  height: 50%;
+  height: 45%;
   position: absolute;
   bottom: 0;
   background-color: #E5EFEB;
@@ -1356,6 +1356,7 @@ h1, h2, h3 {
   width: 58px;
   height: 17px;
   position: absolute;
+  top: -28px;
   right: -50px;
 }
 
@@ -1363,5 +1364,15 @@ h1, h2, h3 {
   width: 58px;
   height: 17px;
   position: absolute;
+  top: -28px;
   right: -380px;
+}
+
+@media screen and (min-width: 375px) {
+  .appointment__next-arr {
+    right: -30px;
+  }
+  .appointment__next-arr2 {
+    right: -375px;
+  }
 }/*# sourceMappingURL=main.css.map */
