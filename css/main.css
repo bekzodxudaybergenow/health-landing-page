@@ -1326,12 +1326,13 @@ h1, h2, h3 {
 .appointment__row {
   display: flex;
   flex-direction: column;
-  align-self: center;
 }
 
 .appointment--title {
+  max-width: 420px;
   font-size: 32px;
-  margin-bottom: 36px;
+  margin: 0 auto;
+  padding-bottom: 36px;
   color: var(--main-color);
   text-align: center;
 }
@@ -1341,6 +1342,9 @@ h1, h2, h3 {
   height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.appointment__pictures span {
+  position: relative;
 }
 
 .swiper .appointment__swiper {
@@ -1352,27 +1356,11 @@ h1, h2, h3 {
   height: 500px !important;
 }
 
-.appointment__next-arr {
-  width: 58px;
-  height: 17px;
-  position: absolute;
-  top: -28px;
-  right: -50px;
-}
-
+.appointment__next-arr,
 .appointment__next-arr2 {
   width: 58px;
   height: 17px;
   position: absolute;
-  top: -28px;
-  right: -380px;
-}
-
-@media screen and (min-width: 375px) {
-  .appointment__next-arr {
-    right: -30px;
-  }
-  .appointment__next-arr2 {
-    right: -375px;
-  }
+  left: -48px;
+  padding-bottom: 58px;
 }/*# sourceMappingURL=main.css.map */
