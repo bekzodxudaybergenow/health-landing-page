@@ -62,5 +62,17 @@ var swiper = new Swiper(".appointment__swiper", {
         375: {
             spaceBetween: 0,
         },
+        620: {
+            slidesPerView: 1.5,
+            spaceBetween: 0,
+        },
+        1024: {
+            slidesPerView: 2.4,
+            spaceBetween: 0,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        }
     }
 });
