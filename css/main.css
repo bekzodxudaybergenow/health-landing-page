@@ -1363,4 +1363,65 @@ h1, h2, h3 {
   position: absolute;
   left: -48px;
   padding-bottom: 58px;
+}
+
+@media screen and (min-width: 375px) {
+  .appointment__next-arr,
+  .appointment__next-arr2 {
+    left: -30px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .appointment {
+    padding: 85px 0 72px 0;
+  }
+  .appointment--title {
+    position: relative;
+    padding-bottom: 51px;
+  }
+  .appointment--title::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    background-color: var(--cyan-green);
+  }
+  .appointment--title::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    background-color: var(--cyan-green);
+  }
+}
+@media screen and (min-width: 620px) {
+  .appointment--title {
+    font-size: 38px;
+    padding-bottom: 70px;
+  }
+  .appointment--title::before {
+    width: 60px;
+    left: -40px;
+  }
+  .appointment--title::after {
+    width: 60px;
+    right: -30px;
+  }
+  .appointment__next-arr,
+  .appointment__next-arr2 {
+    padding-bottom: 87px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .appointment__pictures--image {
+    height: 540px !important;
+  }
+  .appointment__next-arr,
+  .appointment__next-arr2 {
+    padding-bottom: 43px;
+  }
 }/*# sourceMappingURL=main.css.map */
