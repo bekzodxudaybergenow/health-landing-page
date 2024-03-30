@@ -60,6 +60,7 @@ var swiper = new Swiper(".appointment__swiper", {
     spaceBetween: 40,
     breakpoints: {
         375: {
+            slidesPerView: 1,
             spaceBetween: 0,
         },
         620: {
