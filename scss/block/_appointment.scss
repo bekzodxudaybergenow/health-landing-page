@@ -113,3 +113,30 @@
         padding-bottom: 43px;
     }
 }
+@media screen and (min-width: 1200px) {
+    .appointment--title {
+        max-width: 620px;
+        padding-bottom: 80px;
+
+        &::before {
+            top: 21px;
+            left: -80px;
+        }
+        &::after {
+            top: 21px;
+            right: -78px;
+        }
+    }
+    .appointment__pictures--row {
+        justify-content: space-between;
+    }
+    .appointment__pictures--image {
+        height: 600px !important;
+        width: 300px !important;
+    }
+    .appointment__next-arr,
+    .appointment__next-arr2 {
+        top: 26px;
+        padding-bottom: 0;
+    }
+}
