@@ -77,3 +77,9 @@ var swiper = new Swiper(".appointment__swiper", {
         }
     }
 });
+var swiper = new Swiper(".customers__swiper", {
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+      },
+})
