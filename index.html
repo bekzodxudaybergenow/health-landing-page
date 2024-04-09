@@ -216,11 +216,15 @@
                     </ul>
                 </div>
                 <form class="footer__form">
-                    <label>Name <input type="text"></label>
-                    <label>Email <input type="email"></label>
-                    <label>Message<textarea cols="30" rows="10"></textarea></label>
-                    <input class="btn" type="submit" name="Submit">
+                    <label for="name">Name</label>
+                    <input class="footer__form--item" name="name"  type="text">
+                    <label for="email">Email</label> 
+                    <input class="footer__form--item" name="email" type="email">
+                    <label for="message">Message</label>
+                    <textarea class="footer__form--item textarea" name="message" cols="30" rows="10"></textarea>
+                    <input class="btn footer__btn" type="submit" name="Submit" value="Submit">
                 </form>
+                <p class="footer__bottom">©2023, All rights reserved.</p>
             </div>
         </div>
     </footer>
