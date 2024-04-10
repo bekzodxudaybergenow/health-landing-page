@@ -1715,9 +1715,11 @@ h1, h2, h3 {
 }
 
 .footer__contacts--desc {
+  max-width: 410px;
   font-size: 16px;
   text-align: center;
   padding-bottom: 16px;
+  margin: 0 auto;
 }
 
 .footer__contacts--socials-list {
@@ -1741,6 +1743,9 @@ h1, h2, h3 {
 .footer__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: 410px;
+  margin: 0 auto;
 }
 .footer__form label {
   font-size: 18px;
@@ -1755,6 +1760,7 @@ h1, h2, h3 {
 }
 
 .footer__form--item {
+  width: 100%;
   height: 40px;
   margin-bottom: 16px;
   padding: 0 10px;
@@ -1769,4 +1775,22 @@ h1, h2, h3 {
   display: flex;
   max-width: 100%;
   border: none;
+}
+
+.footer__bottom {
+  font-size: 15px;
+  padding: 32px 0 20px;
+  text-align: center;
+  color: var(--lotion-white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__bottom {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
