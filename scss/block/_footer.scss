@@ -29,6 +29,8 @@
     padding-top: 200px;
 }
 .footer__contacts {
+    display: flex;
+    flex-direction: column;
 }
 .footer__contacts--title {
     max-width: 320px;
@@ -86,7 +88,6 @@
 .footer__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 410px;
     margin: 0 auto;
 
@@ -105,9 +106,11 @@
 }
 .footer__form--item {
   width: 100%;
-  height: 40px;
+  height: 50px;
   margin-bottom: 16px;   
   padding: 0 10px;
+  border: none;
+  border-radius: 4px;
   
 }
 .textarea {
@@ -117,21 +120,100 @@
 .footer__btn {
     display: flex;
     max-width: 100%;
+    height: 50px;
     border: none;
 }
 .footer__bottom {
     font-size: 15px;
-    padding: 32px 0 20px;
     text-align: center;
+    padding: 22px 0 15px;
+    margin-top: 22px;
     color: var(--lotion-white);
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100vw;
+        height: 1px;
+        background-color: var(--lotion-white);
+        position: absolute;
+        top: 0;
+        left: -15px;
+    }
+}
+@media screen and (min-width: 620px) {
+    .footer__contacts--title {
+        font-size: 38px;
+
+        &::before {
+            width: 60px;
+            left: -25px;
+        }
+        &::after {
+            width: 60px;
+            right: -25px;
+        }
+    }
 }
 @media screen and (min-width: 768px) {
+    .footer {
+        position: relative;
+        min-height: 600px;
+
+        &::before {
+            clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+        }
+        &::after {
+            clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+        }
+    }    
     .footer__row {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .footer__contacts {
+    }
+    .footer__contacts--title {
+        text-align: left;
+        margin-left: 80px;
+        padding-bottom: 26px;
+
+        &::before {
+            left: -80px;
+        }
+        &::after {
+            right: 30px;
+        }
+    }
+    .footer__contacts--desc {
+        text-align: left;
+        padding-bottom: 32px;
+    }
+    .footer__contacts--socials-list {
+        justify-content: left;
+        column-gap: 20px;
+    }
+    .footer__form {
+        max-width: 422px;
+        flex-grow: 1;
+        margin: 0;
+    }
+    .footer__btn {
+        max-width: 280px;
     }
     .footer__bottom {
-        width: 100%;
+        width: 100%;;
+        margin-top: 32px;
+        padding-top: 32px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .textarea {
+        margin-bottom: 32px;
+    }
+    .footer__bottom {
     }
 }
