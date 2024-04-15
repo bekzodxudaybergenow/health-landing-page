@@ -9,7 +9,7 @@
     <title>HealthPal Landing Page</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="header__row">
             <menu class="header__menu">
                 <div class="container">
@@ -18,16 +18,16 @@
                             <svg width="67" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.29 29.538v3.656h-6.774V15.162h2.978v-3.806h-6.758v10.579H18.29v-6.773h3.653v-3.806H18.02a3.52 3.52 0 0 0-2.487 1.034 3.534 3.534 0 0 0-1.032 2.492v7.342a3.534 3.534 0 0 0 1.032 2.492 3.52 3.52 0 0 0 2.487 1.034h7.717v7.73a3.534 3.534 0 0 0 1.033 2.488A3.52 3.52 0 0 0 29.252 37h7.308a3.519 3.519 0 0 0 2.487-1.034 3.534 3.534 0 0 0 1.032-2.492v-3.936H36.29Z" fill="#fff"/><path d="M48.98 12.254h-7.715V4.527a3.536 3.536 0 0 0-1.032-2.493A3.52 3.52 0 0 0 37.746 1h-7.308a3.52 3.52 0 0 0-2.486 1.035 3.536 3.536 0 0 0-1.031 2.492V8.46h3.78V4.792h6.768v18.045H34.5v3.807h6.766V16.053h7.445v6.784h-3.655v3.807h3.926a3.52 3.52 0 0 0 2.487-1.035 3.536 3.536 0 0 0 1.032-2.493v-7.334a3.536 3.536 0 0 0-1.032-2.493 3.52 3.52 0 0 0-2.487-1.035Z" fill="#fff"/><path d="M8.596 45.242V55H7.322v-4.424h-4.97V55H1.078v-9.758h1.274v4.284h4.97v-4.284h1.274Zm9.175 5.628c0 .243-.014.5-.042.77h-6.132c.047.756.304 1.349.77 1.778.476.42 1.05.63 1.722.63.551 0 1.008-.126 1.372-.378.374-.261.635-.607.784-1.036h1.372a3.332 3.332 0 0 1-1.232 1.806c-.616.457-1.381.686-2.296.686-.728 0-1.381-.163-1.96-.49a3.493 3.493 0 0 1-1.344-1.386c-.326-.607-.49-1.307-.49-2.1 0-.793.159-1.489.476-2.086a3.308 3.308 0 0 1 1.33-1.372c.579-.327 1.242-.49 1.988-.49.728 0 1.372.159 1.932.476.56.317.99.756 1.288 1.316.308.55.462 1.176.462 1.876Zm-1.316-.266c0-.485-.107-.9-.322-1.246a2.026 2.026 0 0 0-.882-.798 2.63 2.63 0 0 0-1.218-.28c-.644 0-1.194.205-1.652.616-.448.41-.704.98-.77 1.708h4.844Zm2.522.532c0-.784.159-1.47.476-2.058a3.458 3.458 0 0 1 1.302-1.386c.56-.327 1.18-.49 1.862-.49.672 0 1.255.145 1.75.434.495.29.863.653 1.106 1.092v-1.4h1.288V55h-1.288v-1.428c-.252.448-.63.821-1.134 1.12-.495.29-1.073.434-1.736.434a3.478 3.478 0 0 1-1.848-.504 3.534 3.534 0 0 1-1.302-1.414c-.317-.607-.476-1.297-.476-2.072Zm6.496.014c0-.579-.117-1.083-.35-1.512a2.41 2.41 0 0 0-.952-.98 2.498 2.498 0 0 0-1.302-.35c-.476 0-.91.112-1.302.336-.392.224-.705.55-.938.98-.233.43-.35.933-.35 1.512 0 .588.117 1.101.35 1.54.233.43.546.76.938.994.392.224.826.336 1.302.336.476 0 .91-.112 1.302-.336.401-.233.719-.565.952-.994.233-.439.35-.947.35-1.526Zm4.715-6.51V55h-1.274V44.64h1.274Zm3.725 3.738V52.9c0 .373.08.64.238.798.159.15.434.224.826.224h.938V55h-1.148c-.71 0-1.241-.163-1.596-.49-.354-.327-.532-.863-.532-1.61v-4.522h-.994v-1.05h.994v-1.932h1.274v1.932h2.002v1.05h-2.002Zm7.354-1.19c.578 0 1.101.126 1.568.378.466.243.83.611 1.092 1.106.27.495.406 1.097.406 1.806V55h-1.26v-4.34c0-.765-.191-1.349-.574-1.75-.383-.41-.906-.616-1.568-.616-.672 0-1.209.21-1.61.63-.392.42-.588 1.031-.588 1.834V55h-1.274V44.64h1.274v3.78a2.52 2.52 0 0 1 1.036-.91 3.422 3.422 0 0 1 1.498-.322Z" fill="#fff" fill-opacity=".7"/><path d="M52.938 48.098c0 .812-.28 1.489-.84 2.03-.55.532-1.395.798-2.534.798h-1.876V55h-1.274v-9.758h3.15c1.101 0 1.937.266 2.506.798.579.532.868 1.218.868 2.058Zm-3.374 1.778c.71 0 1.232-.154 1.568-.462.336-.308.504-.747.504-1.316 0-1.204-.69-1.806-2.072-1.806h-1.876v3.584h1.876Zm4.481 1.26c0-.784.159-1.47.476-2.058a3.458 3.458 0 0 1 1.302-1.386c.56-.327 1.181-.49 1.862-.49.672 0 1.256.145 1.75.434.495.29.864.653 1.106 1.092v-1.4h1.288V55h-1.288v-1.428c-.252.448-.63.821-1.134 1.12-.494.29-1.073.434-1.736.434a3.477 3.477 0 0 1-1.848-.504 3.534 3.534 0 0 1-1.302-1.414c-.317-.607-.476-1.297-.476-2.072Zm6.496.014c0-.579-.116-1.083-.35-1.512a2.41 2.41 0 0 0-.952-.98 2.498 2.498 0 0 0-1.302-.35c-.476 0-.91.112-1.302.336-.392.224-.704.55-.938.98-.233.43-.35.933-.35 1.512 0 .588.117 1.101.35 1.54.234.43.546.76.938.994.392.224.826.336 1.302.336.476 0 .91-.112 1.302-.336.402-.233.719-.565.952-.994.234-.439.35-.947.35-1.526Zm4.715-6.51V55h-1.274V44.64h1.274Z" fill="#fff"/></svg> 
                         </a>
                         <nav class="header__nav">
-                            <a class="link header__nav--link" href="/">Home</a>
-                            <a class="link header__nav--link" href="/">About</a>
-                            <a class="link header__nav--link" href="/">Services</a>
-                            <a class="link header__nav--link" href="/">Contacts</a>
+                            <a class="link header__nav--link" href="#home">Home</a>
+                            <a class="link header__nav--link" href="#about">About</a>
+                            <a class="link header__nav--link" href="#service">Services</a>
+                            <a class="link header__nav--link" href="#contacts">Contacts</a>
                         </nav>
                         <div class="header__sidebar">
-                            <a class="link header__sidebar--link" href="/">Home</a>
-                            <a class="link header__sidebar--link" href="/">About</a>
-                            <a class="link header__sidebar--link" href="/">Services</a>
-                            <a class="link header__sidebar--link" href="/">Contacts</a>
+                            <a class="link header__sidebar--link" href="#home">Home</a>
+                            <a class="link header__sidebar--link" href="#about">About</a>
+                            <a class="link header__sidebar--link" href="#service">Services</a>
+                            <a class="link header__sidebar--link" href="#contacts">Contacts</a>
                         </div>
                         <a class="btn header__btn" href="/">Download Now</a>
                         <button class="header__sidebar--btn">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="map">
+        <section class="map" id="service">
             <div class="container">
                 <div class="map__row">
                     <div class="map__content">
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__row">
                     <div class="about__content">
@@ -194,7 +194,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__contacts">
@@ -202,19 +202,29 @@
                     <p class="desc footer__contacts--desc">We are honored to receive your comments and suggestions. Please feel free to contact us :</p>
                     <ul class="footer__contacts--socials-list">
                         <li class="footer__socials--item">
-                            <img src="./image/footer/apple.svg" width="48" height="48" alt="Apple logo icon">
+                            <a href="/">
+                                <img src="./image/footer/apple.svg" width="48" height="48" alt="Apple logo icon">
+                            </a>
                         </li>
                         <li class="footer__socials--item">
-                            <img src="./image/footer/google.svg" width="48" height="48" alt="Google logo icon">
+                            <a href="/">
+                                <img src="./image/footer/google.svg" width="48" height="48" alt="Google logo icon">
+                            </a>
                         </li>
                         <li class="footer__socials--item">
-                            <img src="./image/footer/linkedIn.svg" width="48" height="48" alt="LinkedIn logo icon">
+                            <a href="/">
+                                <img src="./image/footer/linkedIn.svg" width="48" height="48" alt="LinkedIn logo icon">
+                            </a>
                         </li>
                         <li class="footer__socials--item">
-                            <img src="./image/footer/x.svg" width="48" height="48" alt="X logo icon">
+                            <a href="/">
+                                <img src="./image/footer/x.svg" width="48" height="48" alt="X logo icon">
+                            </a>
                         </li>
                         <li class="footer__socials--item">
-                            <img src="./image/footer/facebook.svg" width="48" height="48" alt="Facebook logo icon">
+                            <a href="/">
+                                <img src="./image/footer/facebook.svg" width="48" height="48" alt="Facebook logo icon">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -227,6 +237,7 @@
                     <textarea class="footer__form--item textarea" name="message" cols="30" rows="10"></textarea>
                     <input class="btn footer__btn" type="submit" name="Submit" value="Submit">
                 </form>
+                <span class="footer__line"></span>
                 <p class="footer__bottom">©2023, All rights reserved.</p>
             </div>
         </div>
