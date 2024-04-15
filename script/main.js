@@ -81,5 +81,8 @@ var swiper = new Swiper(".customers__swiper", {
     slidesPerView: 1,
     pagination: {
         el: '.swiper-pagination',
-      },
+    },
+    autoplay: {
+        delay: 5000,
+    },
 })
